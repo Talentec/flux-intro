@@ -1,0 +1,95 @@
+body {
+    background: #eee;
+    font-family: "Tahoma";
+}
+
+li {
+    list-style: none;
+}
+
+.app {
+    width: 500px;
+    margin: 30px auto;
+    background: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.todoInput {
+    outline: none;
+    padding: 5px 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+}
+
+.todoInput:hover, .todoInput:focus {
+    border-color: #6699cc;
+}
+
+.todoList {
+    margin: 10px 0;
+    padding: 0;
+}
+
+.item .check {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    margin-right: 5px;
+    vertical-align: middle;
+    border-radius: 10px;
+}
+
+.item {
+    cursor: pointer;
+    font-size: 14px;
+    border-bottom: 1px dashed #ccc;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.item.completed {
+    text-decoration: line-through;
+    background: #f5ff9d;
+}
+
+.item.completed .check {
+    background-color: #6699ce;
+}
+
+.item .delete {
+    float: right;
+    background: red;
+    color: #fff;
+    display: none;
+    padding: 2px 10px;
+    border-radius: 15px;
+}
+
+.item:hover .delete {
+    display: inline-block;
+}
+
+.footerList {
+
+}
+
+.deleteAll {
+    float: right;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+
+.clear {
+    clear: both;
+}
